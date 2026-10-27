@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FX Quote Board</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="root">
+      <section class="board loading" aria-busy="true">
+        <header class="board-head">
+          <div class="title">
+            <span class="pair-badge skeleton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="muted">Requesting prices…</span>
+          </div>
+        </header>
+        <div class="cards">
+          <div class="card skeleton-card"></div>
+          <div class="card skeleton-card"></div>
+          <div class="card skeleton-card"></div>
+        </div>
+      </section>
+    </main>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./quote-board.ts"></script>
+  </body>
+</html>
